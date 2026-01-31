@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/_deps/juce-build/tools/cmake_install.cmake",
+		"/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/_deps/juce-build/tools/modules/cmake_install.cmake",
+		"/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/_deps/juce-build/tools/extras/Build/cmake_install.cmake",
+		"/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/_deps/juce-build/tools/extras/Build/juceaide/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

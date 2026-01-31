@@ -1,0 +1,51 @@
+#!/bin/sh
+set -e
+if test "$CONFIGURATION" = "Debug"; then :
+  cd /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode
+  /opt/homebrew/bin/cmake -E copy /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/JuceLibraryCode/TremoloCoursePlugin_VST3/PkgInfo /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/Debug/VST3/Tremolo.vst3/Contents
+  cd /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode
+  /opt/homebrew/bin/cmake -Dsrc=/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/Debug/VST3/Tremolo.vst3 -P /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/libs/juce/extras/Build/CMake/checkBundleSigning.cmake
+  cd /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode
+  /opt/homebrew/bin/cmake -E echo removing\ moduleinfo.json
+  /opt/homebrew/bin/cmake -E remove -f /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/Debug/VST3/Tremolo.vst3/Contents/moduleinfo.json /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/Debug/VST3/Tremolo.vst3/Contents/Resources/moduleinfo.json
+  cd /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/Debug/VST3
+  /opt/homebrew/bin/cmake -E copy /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/assets/README.txt /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/Debug/VST3
+  /opt/homebrew/bin/cmake -E tar cvf /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/Debug/VST3/Tremolo.zip --format=zip -- /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/Debug/VST3/Tremolo.vst3 README.txt
+fi
+if test "$CONFIGURATION" = "Release"; then :
+  cd /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode
+  /opt/homebrew/bin/cmake -E copy /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/JuceLibraryCode/TremoloCoursePlugin_VST3/PkgInfo /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/Release/VST3/Tremolo.vst3/Contents
+  cd /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode
+  /opt/homebrew/bin/cmake -Dsrc=/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/Release/VST3/Tremolo.vst3 -P /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/libs/juce/extras/Build/CMake/checkBundleSigning.cmake
+  cd /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode
+  /opt/homebrew/bin/cmake -E echo removing\ moduleinfo.json
+  /opt/homebrew/bin/cmake -E remove -f /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/Release/VST3/Tremolo.vst3/Contents/moduleinfo.json /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/Release/VST3/Tremolo.vst3/Contents/Resources/moduleinfo.json
+  cd /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/Release/VST3
+  /opt/homebrew/bin/cmake -E copy /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/assets/README.txt /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/Release/VST3
+  /opt/homebrew/bin/cmake -E tar cvf /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/Release/VST3/Tremolo.zip --format=zip -- /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/Release/VST3/Tremolo.vst3 README.txt
+fi
+if test "$CONFIGURATION" = "MinSizeRel"; then :
+  cd /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode
+  /opt/homebrew/bin/cmake -E copy /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/JuceLibraryCode/TremoloCoursePlugin_VST3/PkgInfo /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/MinSizeRel/VST3/Tremolo.vst3/Contents
+  cd /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode
+  /opt/homebrew/bin/cmake -Dsrc=/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/MinSizeRel/VST3/Tremolo.vst3 -P /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/libs/juce/extras/Build/CMake/checkBundleSigning.cmake
+  cd /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode
+  /opt/homebrew/bin/cmake -E echo removing\ moduleinfo.json
+  /opt/homebrew/bin/cmake -E remove -f /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/MinSizeRel/VST3/Tremolo.vst3/Contents/moduleinfo.json /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/MinSizeRel/VST3/Tremolo.vst3/Contents/Resources/moduleinfo.json
+  cd /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/MinSizeRel/VST3
+  /opt/homebrew/bin/cmake -E copy /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/assets/README.txt /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/MinSizeRel/VST3
+  /opt/homebrew/bin/cmake -E tar cvf /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/MinSizeRel/VST3/Tremolo.zip --format=zip -- /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/MinSizeRel/VST3/Tremolo.vst3 README.txt
+fi
+if test "$CONFIGURATION" = "RelWithDebInfo"; then :
+  cd /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode
+  /opt/homebrew/bin/cmake -E copy /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/JuceLibraryCode/TremoloCoursePlugin_VST3/PkgInfo /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/RelWithDebInfo/VST3/Tremolo.vst3/Contents
+  cd /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode
+  /opt/homebrew/bin/cmake -Dsrc=/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/RelWithDebInfo/VST3/Tremolo.vst3 -P /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/libs/juce/extras/Build/CMake/checkBundleSigning.cmake
+  cd /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode
+  /opt/homebrew/bin/cmake -E echo removing\ moduleinfo.json
+  /opt/homebrew/bin/cmake -E remove -f /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/RelWithDebInfo/VST3/Tremolo.vst3/Contents/moduleinfo.json /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/RelWithDebInfo/VST3/Tremolo.vst3/Contents/Resources/moduleinfo.json
+  cd /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/RelWithDebInfo/VST3
+  /opt/homebrew/bin/cmake -E copy /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/assets/README.txt /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/RelWithDebInfo/VST3
+  /opt/homebrew/bin/cmake -E tar cvf /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/RelWithDebInfo/VST3/Tremolo.zip --format=zip -- /Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/TremoloCoursePlugin_artefacts/RelWithDebInfo/VST3/Tremolo.vst3 README.txt
+fi
+
