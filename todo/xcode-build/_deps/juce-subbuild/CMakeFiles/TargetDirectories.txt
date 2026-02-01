@@ -1,0 +1,3 @@
+/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/todo/xcode-build/_deps/juce-subbuild/CMakeFiles/juce-populate.dir
+/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/todo/xcode-build/_deps/juce-subbuild/CMakeFiles/ALL_BUILD.dir
+/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/todo/xcode-build/_deps/juce-subbuild/CMakeFiles/ZERO_CHECK.dir

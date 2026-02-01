@@ -1,0 +1,15 @@
+/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/todo/xcode-build/CMakeFiles/TremoloCoursePlugin.dir
+/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/todo/xcode-build/CMakeFiles/TremoloCoursePlugin_All.dir
+/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/todo/xcode-build/CMakeFiles/TremoloCoursePlugin_Standalone.dir
+/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/todo/xcode-build/CMakeFiles/TremoloCoursePlugin_AU.dir
+/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/todo/xcode-build/CMakeFiles/TremoloCoursePlugin_VST3.dir
+/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/todo/xcode-build/CMakeFiles/tremolo_plugin_assets.dir
+/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/todo/xcode-build/CMakeFiles/install.dir
+/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/todo/xcode-build/CMakeFiles/ALL_BUILD.dir
+/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/todo/xcode-build/CMakeFiles/ZERO_CHECK.dir
+/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/todo/xcode-build/_deps/juce-build/CMakeFiles/install.dir
+/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/todo/xcode-build/_deps/juce-build/CMakeFiles/ALL_BUILD.dir
+/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/todo/xcode-build/_deps/juce-build/CMakeFiles/ZERO_CHECK.dir
+/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/todo/xcode-build/_deps/juce-build/modules/CMakeFiles/install.dir
+/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/todo/xcode-build/_deps/juce-build/extras/Build/CMakeFiles/install.dir
+/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/todo/xcode-build/_deps/juce-build/extras/Build/juceaide/CMakeFiles/install.dir

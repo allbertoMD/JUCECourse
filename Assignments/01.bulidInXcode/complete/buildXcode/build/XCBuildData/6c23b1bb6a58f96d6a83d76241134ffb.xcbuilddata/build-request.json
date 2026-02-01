@@ -1,0 +1,83 @@
+{
+  "buildCommand" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "30d42e3d17163aed0107595fe9ab6fc7397b64b9887cc230781c92e84f116f18"
+    },
+    {
+      "guid" : "30d42e3d17163aed0107595fe9ab6fc727c4e6d0ccf6620fb623158b41322920"
+    },
+    {
+      "guid" : "30d42e3d17163aed0107595fe9ab6fc776d32086554449d240e0c900b7a62259"
+    },
+    {
+      "guid" : "30d42e3d17163aed0107595fe9ab6fc70df5fb69fe457328da6341097f8ed8e5"
+    },
+    {
+      "guid" : "30d42e3d17163aed0107595fe9ab6fc738168ce5ada38991cadd017c624341de"
+    },
+    {
+      "guid" : "30d42e3d17163aed0107595fe9ab6fc7384ef482c77c28d666c6538032018641"
+    },
+    {
+      "guid" : "30d42e3d17163aed0107595fe9ab6fc75e88bb0ed7f334fc6deb4fd1fd320b61"
+    },
+    {
+      "guid" : "30d42e3d17163aed0107595fe9ab6fc7417054fc2e2da7a66a48bba69f0d043d"
+    },
+    {
+      "guid" : "30d42e3d17163aed0107595fe9ab6fc72f68fc4a719ca792b65d4d1b9344470e"
+    }
+  ],
+  "containerPath" : "/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/Assignments/01.bulidInXcode/complete/buildXcode/JucePluginDevelopmentCourseTremoloPlugin.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx26.2",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/albertomartinez/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/albertomartinez/Library/Developer/Xcode/DerivedData/JucePluginDevelopmentCourseTremoloPlugin-fkjqbmkdqxerqdebzyvfmmropytf/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/albertomartinez/Library/Developer/Xcode/DerivedData/JucePluginDevelopmentCourseTremoloPlugin-fkjqbmkdqxerqdebzyvfmmropytf/Index.noindex/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

@@ -1,0 +1,11 @@
+Target dependency graph (4 targets)
+Target 'TremoloCoursePlugin_VST3' in project 'JucePluginDevelopmentCourseTremoloPlugin'
+➜ Explicit dependency on target 'ZERO_CHECK' in project 'JucePluginDevelopmentCourseTremoloPlugin'
+➜ Explicit dependency on target 'TremoloCoursePlugin' in project 'JucePluginDevelopmentCourseTremoloPlugin'
+➜ Explicit dependency on target 'tremolo_plugin_assets' in project 'JucePluginDevelopmentCourseTremoloPlugin'
+Target 'TremoloCoursePlugin' in project 'JucePluginDevelopmentCourseTremoloPlugin'
+➜ Explicit dependency on target 'ZERO_CHECK' in project 'JucePluginDevelopmentCourseTremoloPlugin'
+➜ Explicit dependency on target 'tremolo_plugin_assets' in project 'JucePluginDevelopmentCourseTremoloPlugin'
+Target 'tremolo_plugin_assets' in project 'JucePluginDevelopmentCourseTremoloPlugin'
+➜ Explicit dependency on target 'ZERO_CHECK' in project 'JucePluginDevelopmentCourseTremoloPlugin'
+Target 'ZERO_CHECK' in project 'JucePluginDevelopmentCourseTremoloPlugin' (no dependencies)
