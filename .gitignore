@@ -66,3 +66,9 @@ Temporary Items
 *.icloud
 
 # End of https://www.toptal.com/developers/gitignore/api/c++,macos
+
+### CMake/Build ###
+xcode-build/
+cmake-build/
+build/
+libs/

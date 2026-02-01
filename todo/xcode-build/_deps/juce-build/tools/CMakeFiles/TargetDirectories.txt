@@ -1,7 +1,0 @@
-/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/todo/xcode-build/_deps/juce-build/tools/CMakeFiles/install.dir
-/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/todo/xcode-build/_deps/juce-build/tools/CMakeFiles/ALL_BUILD.dir
-/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/todo/xcode-build/_deps/juce-build/tools/CMakeFiles/ZERO_CHECK.dir
-/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/todo/xcode-build/_deps/juce-build/tools/modules/CMakeFiles/install.dir
-/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/todo/xcode-build/_deps/juce-build/tools/extras/Build/CMakeFiles/install.dir
-/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/todo/xcode-build/_deps/juce-build/tools/extras/Build/juceaide/CMakeFiles/juceaide.dir
-/Users/albertomartinez/Developer/C++/_Practice_/JUCEcourse/todo/xcode-build/_deps/juce-build/tools/extras/Build/juceaide/CMakeFiles/install.dir

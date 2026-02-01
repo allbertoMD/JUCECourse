@@ -57,9 +57,9 @@ include(cmake/Util.cmake)
 
 
 if(CMAKE_SYSTEM_NAME STREQUAL "Darwin")
-  # Sets the MocOs VST3 installation location to one
+  # Sets the macOS VST3 installation location to one
   # that doesn't require elevated permissions
-  set_directory_properties(PROPERTIES JUCE_VST3_COPY_DIR "$ENV{LOCALAPPDATA}/Library/Audio/Plug-Ins/VST3")
+  set_directory_properties(PROPERTIES JUCE_VST3_COPY_DIR "$ENV{HOME}/Library/Audio/Plug-Ins/VST3")
 endif()
 
 # Adds a plugin target.
@@ -69,7 +69,7 @@ juce_add_plugin(
   PRODUCT_NAME
     ${TREMOLO_PLUGIN_NAME}
   VERSION
-    1.0.0 forces AU hosts to always refresh
+    1.0.0 
   COMPANY_NAME
     "Aldevto"
   PLUGIN_MANUFACTURER_CODE
