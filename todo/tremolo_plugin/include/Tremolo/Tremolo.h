@@ -3,10 +3,12 @@
 namespace tremolo {
 class Tremolo {
 public:
-  void prepare(double sampleRate, int expectedMaxFramesPerBlock) {
+// MARK:   -------- --  sampleRate | expectedMaxFramesPerBlock 
+void prepare(double sampleRate, int expectedMaxFramesPerBlock) {
     juce::ignoreUnused(sampleRate, expectedMaxFramesPerBlock);
   }
 
+  // MARK: ----------
   void process(juce::AudioBuffer<float>& buffer) noexcept {
     // for each frame
     for (const auto frameIndex : std::views::iota(0, buffer.getNumSamples())) {
@@ -14,6 +16,7 @@ public:
 
       // TODO: calculate the modulation value
 
+      // MARK: ---------
       // for each channel sample in the frame
       for (const auto channelIndex :
            std::views::iota(0, buffer.getNumChannels())) {

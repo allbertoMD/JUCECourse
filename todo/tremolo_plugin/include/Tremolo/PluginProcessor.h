@@ -1,15 +1,20 @@
 #pragma once
 
 namespace tremolo {
+
 class PluginProcessor : public juce::AudioProcessor {
 public:
-  PluginProcessor();
 
+    PluginProcessor();
+
+    // MARK: prepareToPlay
   void prepareToPlay(double sampleRate, int expectedMaxFramesPerBlock) override;
 
+    // MARK: processBlock
   void processBlock(juce::AudioBuffer<float>&, juce::MidiBuffer&) override;
   using AudioProcessor::processBlock;
 
+    // MARK: releaseResources
   void releaseResources() override;
 
   juce::AudioProcessorEditor* createEditor() override;
@@ -36,7 +41,8 @@ public:
 private:
   // TODO: add parameters
 
-  Tremolo tremolo;
+    // MARK: Tremolo tremolo
+    Tremolo tremolo;
 
   JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(PluginProcessor)
 };
