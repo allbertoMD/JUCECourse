@@ -50,7 +50,7 @@ void PluginProcessor::changeProgramName(int index,
   juce::ignoreUnused(index, newName);
 }
 
-// MARK: ----------
+// MARK: prepareToPlay
 void PluginProcessor::prepareToPlay(double sampleRate,
                                     int expectedMaxFramesPerBlock) {
   // Use this method as the place to do any pre-playback
@@ -84,6 +84,7 @@ bool PluginProcessor::isBusesLayoutSupported(const BusesLayout& layouts) const {
   return true;
 }
 
+// MARK: processBlock
 void PluginProcessor::processBlock(juce::AudioBuffer<float>& buffer,
                                    juce::MidiBuffer& midiMessages) {
   juce::ignoreUnused(midiMessages);
@@ -99,7 +100,7 @@ void PluginProcessor::processBlock(juce::AudioBuffer<float>& buffer,
   // when they first compile a plugin, but obviously you don't need to keep
   // this code if your algorithm always overwrites all the output channels.
   
-  // MAR: ----------
+  // MARK: channelToClear
   for (const auto channelToClear :
        std::views::iota(totalNumInputChannels, totalNumOutputChannels)) {
     buffer.clear(channelToClear, 0, buffer.getNumSamples());
@@ -140,7 +141,7 @@ void PluginProcessor::setStateInformation(const void* data, int sizeInBytes) {
 }
 }  // namespace tremolo
 
-// MARK:
+// MARK: createPluginFilter
 // This creates new instances of the plugin.
 // This function definition must be in the global namespace.
 juce::AudioProcessor* JUCE_CALLTYPE createPluginFilter() {
