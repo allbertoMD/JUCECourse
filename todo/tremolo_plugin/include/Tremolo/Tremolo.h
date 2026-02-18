@@ -3,6 +3,7 @@
 namespace tremolo {
 class Tremolo {
 public:
+
     // MARK: 2. Tremolo Constructor
     Tremolo() {
         lfo.setFrequency(5.f /* Hz */, true); // 440 for test
@@ -10,7 +11,8 @@ public:
     
     // MARK: sampleRate | exp§ectedMaxFramesPerBlock
     void prepare(double sampleRate, int expectedMaxFramesPerBlock) {
-        // 4. MARK: Remove ignoreUnused
+        
+        // MARK: 4. Remove ignoreUnused
         // juce::ignoreUnused(sampleRate, expectedMaxFramesPerBlock);
 
         // MARK: 3. Using function parameters
@@ -19,7 +21,8 @@ public:
             .maximumBlockSize = static_cast<juce::uint32>(expectedMaxFramesPerBlock),
             .numChannels = 1u,
         };
-        // 5. Prepare processSpec
+        
+        // MARK: 5. Prepare processSpec
         lfo.prepare(processSpec);
     }
     
@@ -30,18 +33,23 @@ public:
             
             // MARK: 8. lfoValue
             const auto lfoValue = lfo.processSample(0.f);
-            
+
+            // MARK: 10. calculate modulationValue
+            constexpr auto modulationDepth = 0.4f;
+            const auto modulationValue = 1.0f + modulationDepth * lfoValue;
+
             // TODO: calculate the modulation value
-            
-            // MARK: for each channel sample in the frame
+
+            // MARK: 7. for each channel sample in the frame
             // for each channel sample in the frame
             for (const auto channelIndex :
                  std::views::iota(0, buffer.getNumChannels())) {
                 // get the input sample
                 const auto inputSample = buffer.getSample(channelIndex, frameIndex);
-                
-                // 9. MARK: modulate the sample
-                const auto outputSample = 0.1f * lfoValue;
+
+                // MARK: 9. modulate the sample
+                // MARK: 11. module  the sample
+                const auto outputSample = inputSample * modulationValue;
                 
                 // set the output sample
                 buffer.setSample(channelIndex, frameIndex, outputSample);
@@ -50,7 +58,7 @@ public:
     }
     
     void reset() noexcept {
-        // MARK; 6. reset lfo`
+        // MARK: 6. reset lfo`
         lfo.reset();
     }
     
