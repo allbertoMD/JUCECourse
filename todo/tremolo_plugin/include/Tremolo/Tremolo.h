@@ -6,14 +6,13 @@ public:
 
     // MARK: 2. Tremolo Constructor
     Tremolo() {
-        lfo.setFrequency(5.f /* Hz */, true); // 440 for test
+        lfo.setFrequency(5.0f /* Hz */, true); // 440 for test
     }
     
     // MARK: sampleRate | exp§ectedMaxFramesPerBlock
     void prepare(double sampleRate, int expectedMaxFramesPerBlock) {
         
-        // MARK: 4. Remove ignoreUnused
-        // juce::ignoreUnused(sampleRate, expectedMaxFramesPerBlock);
+        // MARK: 4. Remove juce::ignoreUnused(sampleRate, expectedMaxFramesPerBlock);
 
         // MARK: 3. Using function parameters
         const juce::dsp::ProcessSpec processSpec {
@@ -36,9 +35,8 @@ public:
 
             // MARK: 10. calculate modulationValue
             constexpr auto modulationDepth = 0.4f;
-            const auto modulationValue = 1.0f + modulationDepth * lfoValue;
+            const auto modulationValue = modulationDepth * (lfoValue + 1.0f) / 2;
 
-            // TODO: calculate the modulation value
 
             // MARK: 7. for each channel sample in the frame
             // for each channel sample in the frame
